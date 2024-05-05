@@ -37,5 +37,20 @@
 ---
 
 ## Cloud Native Application
+* 지속적인 통합 CI (Continuous Integration)
+  * 통합 서버, 소스 관리(SCM), 빌드 도구, 테스트 도구
+  * ex) Jenkins, Team CI, Travis CI
+    * 커밋과 동시에 빌드, 테스트를 통해 다른 서비스와 문제 발생 여부 확인 가능
+* 지속적 배포
+  * Continuous Delivery (수동 반영)
+  * Continuous Deployment (자동 반영)
+  * Pipe line
+* 카나리 배포와 블루 그린 배포
+    * 카나리 배포: 95% 사용자는 이전 버전 서비스, 5% 사용자는 새 버전 서비스
+    * 블루그린 배포: 이전 버전 사용자의 트래픽을 점진적으로 신 버전에 적용
+### Container 가상화
+![](./images/container.png)
+
+
 
 

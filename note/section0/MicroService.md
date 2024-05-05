@@ -51,6 +51,43 @@
 ### Container 가상화
 ![](./images/container.png)
 
+> 기존보다 가볍고 빠르게 작동할 수 있는 특징이 있음
 
+---
+
+## Factors
+
+1. One codebase, one application
+   1. 지속적인 관리를 위한 통일화된 코드 베이스
+2. API first
+   1. API 형태로 서비스 제공. 사용자 측면에서 서비스 고려
+3. Dependency management
+   1. 전체 시스템에 영향을 줘선 안됨
+4. Design, build, release, and run
+5. Configuration, credentials, and code
+   1. 시스템 코드 외부에서 구성 관리 도구를 통해 마이크로 서비스의 작업 제어
+6. Logs
+   1. 하나의 시스템 안에서 로그를 출력하는 로직이 분리되어야 함.
+   2. 모니터링 도구 등 사용
+7. Disposability
+   1. 서비스 인스턴스 자체가 삭제가 가능해야 함. 정상적으로 종료가 가능해야 함
+8. Backing Services
+   1. 마이크로 서비스가 가져야할 보조 서비스를 추가로 지원. without dependency 
+9. Environment parity
+   1. 직접 Access하는 기능을 배제 하고, 상호간 종속적이지 않아야 함
+10. Administrative processes
+    1. 관리자용 데이터 분석 등의 도구 필요
+11. Port binding
+    1. 자체 포트에서 노출되는 인터페이스 및 기능이 있어야 함
+12. Stateless processes
+    1. 실행 중인 서비스와 분리되어 자체적으로 실행될 수 있어야 함
+13. Concurrency
+    1. 많은 수의 동일한 프로세스를 복사하여 부하 분산
+14. Telemetry
+    1. 시각화로 제공
+15. Authentication and authorization
+    1. 마이크로 서비스라도 인증 필수
+
+---
 
 

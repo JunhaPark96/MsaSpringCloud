@@ -137,4 +137,43 @@
 > 5. 외부 종속성과의 상호작용 최소화
 > 6. 여러 기술 적용 가능성
 
+---
+
+### SOA와 MSA 차이점
+* SOA(Servic Oriented Architectrue)
+    * 비즈니스 측면ㅇ에서의 서비스 재사용성
+    * ESB(Enterprise Service Bus)라는 서비스 채널 이용 -> 서비스 공유, 재사용
+* MSA(Microservice Architecture)
+    * 한 가지 작은 서비스에 집중
+    * 서비스 공유하지 않고 독립적 실행
+
+* 서비스 공유 지향점
+    * SOA: 재사용을 통한 비용 절감
+    * MSA: 서비스 간의 결합도를 낮추어 변화에 능동적으로 대응
+      ![](./images/SOAMSA1.png)
+* 기술 방식
+  * SOA: 공통의 서비스를 ESB에 모아 사업 측면에서 공통 서비스 형식으로 서비스 제공
+  * MSA: 각 독립된 서비스가 노출된 REST API를 사용
+      ![](./images/SOAMSA2.png)
+
+### RESTful Web Service
+* LEVEL 0
+  * REST 방식의 애플리케이션 보다 기존의 리소스를 web service로 배포하기 위해 url만 변경된 상태
+* LEVEL 1
+  * 적절한 uri로 리소스를 처리
+  * http 메소드의 사용은 제대로 사용되지 않음
+* LEVEL 2
+  * LEVEL 1 + http 메소드 설계
+* LEVEL 3
+  * LEVEL2 + HATEOAS
+  * DATA를 가지고, 다음 단계에서 어떤 액션을 할 수 있는지 고려한 단계
+
+> 1. 소비자 우선 -> 직접 소비자 뿐만 아니라 API를 사용하는 클라이언트도 포함
+> 2. HTTP 사용 최적화
+> 3. 적절한 Request 메소드 - GET, POST, PUT, DELETE
+> 4. 적절한 Response Status 전달 - 200, 404, 400, 201, 401
+> 5. URI에 취약 정보 제거
+> 6. 데이터 복수 형태 제공
+> 7. 리소스 명사 형태 사용
+> 8. 일괄적인 엔드포인트 사용
 

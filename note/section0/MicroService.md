@@ -177,3 +177,28 @@
 > 7. 리소스 명사 형태 사용
 > 8. 일괄적인 엔드포인트 사용
 
+---
+
+## MicroService Architecture Structures
+MSA 표준 구성 요소
+![](./images/MSAcomponents1.png)
+
+서비스 간 통신을 추상화하고 안전하고 빠르게 만들어주는 Infrastructure layers
+![](./images/MSAcomponents2.png)
+* MSA 인프라 -> 미들웨어
+  * 프록시 역할, 인증, 권한 부여, 암호화, 서비스 검색, 요청 라우팅, 로드 밸런싱
+  * 자가 치유 복구 서비스
+* 서비스간의 통신과 관련된 기능을 자동화
+
+![](./images/MSAcomponents3.png)
+CNCF에서 제공하는 서비스
+
+MSA 기반 기술
+1. Gateway
+2. Resilient Service Mesh/Meta Services
+3. Runtime
+4. Frameworks
+5. Automation
+6. Backing Services
+7. Telemetry
+
